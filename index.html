@@ -11,26 +11,26 @@
     <!-- Navbar goes here -->
     <nav>
         <div class="container nav-container">
-            <a class="logo" href="">JAGATH DASANAYAKA</a>
+            <a class="name" href="#header">JAGATH DASANAYAKA</a>
             <ul class="nav-links">
                 <li>
-                    <a href="">About</a>
+                    <a href="#about-section">About</a>
                 </li>
                 <li>
-                    <a href="">Experiences</a>
+                    <a href="#experience-section">Experiences</a>
                 </li>
                 <li>
                     <a href="">Skills</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="#contact-section">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Header code starts here -->
-    <header>
+    <!-- Header goes here -->
+    <header id="header">
         <div class="container header-container">
             <div class="header-left">
                 <img class="header-image" src="images/jagath_profile.jpg" alt="Profile photo">
@@ -56,14 +56,14 @@
     </header>
 
     <!-- About section goes here -->
-    <section>
+    <section id="about-section">
         <p class="global-title-p">Get to know more</p>
         <h1 class="global-title-h1">About Me</h1>
 
         <div class="container about-container">
-            <div class="about-left">
+            <!-- <div class="about-left">
                 <img src="images/jagath_casual.jpg" alt="Casual photo">
-            </div>
+            </div> -->
             <div class="about-right">
                 <div class="basic-edu">
                     <div class="edu-box">
@@ -82,7 +82,7 @@
                         </p>
                     </div>
                 </div>
-                <p class="about-p">Experienced IT professional with a demonstrated history of working in IT support and administration for missioncritical
+                <p class="about-p">Experienced IT professional with a demonstrated history of working in IT support and administration for mission-critical
                     applications, systems, and networks.
                 </p>
             </div>
@@ -90,18 +90,23 @@
 
     </section>
 
-    <!-- First experience section goes here -->
-    <section>
+    <!-- Experience section goes here -->
+    <section id="experience-section">
         <p class="global-title-p">
             Explore My
         </p>
         <h1 class="global-title-h1">Experiences</h1>
         <div class="container experience-container">
+
+            <!-- First experience goes here -->
             <div class="expereience-box">
-                <h2>System Administartion</h2>
+                <h2>System Administration</h2>
+                <div class="experience-image">
+                    <img src="images/server_admin.jpg" alt="Server Admin image">
+                </div>
                 <div class="experience">
                     <div class="ex-div">
-                        <img src="images/checkmark.png" alt="">
+                        <img src="images/bullet_point.png" alt="Bullet point">
                         <div>
                             <h4>
                                 Windows Server Administration
@@ -112,7 +117,7 @@
                         </div>
                     </div>
                     <div class="ex-div">
-                        <img src="images/checkmark.png" alt="">
+                        <img src="images/bullet_point.png" alt="Bullet point">
                         <div>
                             <h4>
                                 System Center Configuration Manager
@@ -127,39 +132,45 @@
 
             <!-- Second experience goes here -->
             <div class="expereience-box">
-                <h2>Network Administartiont</h2>
+                <h2>Network Administration</h2>
+                <div class="experience-image">
+                    <img src="images/network_admin.jpg" alt="Network admin image">
+                </div>
                 <div class="experience">
                     <div class="ex-div">
-                        <img src="images/checkmark.png" alt="">
+                        <img src="images/bullet_point.png" alt="Bullet point">
                         <div>
                             <h4>
                                 Cisco Routers
                             </h4>
                             <p>
-                                Experienced
+                                2800, 1941, 1921, 1841
                             </p>
                         </div>
                     </div>
                     <div class="ex-div">
-                        <img src="images/checkmark.png" alt="">
+                        <img src="images/bullet_point.png" alt="Bullet point">
                         <div>
                             <h4>
                                 Cisco Switches
                             </h4>
                             <p>
-                                Experienced
+                                3750, 3550, 2960, 2950
                             </p>
                         </div>
                     </div>                    
                 </div>
             </div>
 
-            <!-- Third experience goes here
+            <!-- Third experience goes here -->
             <div class="expereience-box">
                 <h2>Service Desk</h2>
+                <div class="experience-image">
+                    <img src="images/service_desk.jpg" alt="Service Desk image">
+                </div>
                 <div class="experience">
                     <div class="ex-div">
-                        <img src="images/checkmark.png" alt="">
+                        <img src="images/bullet_point.png" alt="Bullet point">
                         <div>
                             <h4>
                                 Windows Workstation Support
@@ -170,7 +181,7 @@
                         </div>
                     </div>
                     <div class="ex-div">
-                        <img src="images/checkmark.png" alt="">
+                        <img src="images/bullet_point.png" alt="Bullet point">
                         <div>
                             <h4>
                                 Ticketing Application
@@ -181,48 +192,60 @@
                         </div>
                     </div>                    
                 </div>
-            </div> -->
+            </div>
+
+            <!-- Forth experience goes here -->
+            <div class="expereience-box">
+                <h2>Data Center Support</h2>
+                <div class="experience-image">
+                    <img src="images/data_center.jpg" alt="Data Center image">
+                </div>
+                <div class="experience">
+                    <div class="ex-div">
+                        <img src="images/bullet_point.png" alt="Bullet point">
+                        <div>
+                            <h4>
+                                Install, Remove and Maintain Servers
+                            </h4>
+                            <p>
+                                HPE ProLiant,  Dell PowerEdge
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ex-div">
+                        <img src="images/bullet_point.png" alt="Bullet point">
+                        <div>
+                            <h4>
+                                Data Center Cabling
+                            </h4>
+                            <p>
+                                Fiber Optic Cabeling, Connectors
+                            </p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Project Section code starts here -->
+    <!-- Skills Section code starts here -->
     <section>
         <p class="global-title-p">
-            Browse My Recent
+            Browse My Skills
         </p>
         <h1 class="global-title-h1">Projects</h1>
-        <div class="container project-container">
-            <div class="project">
-                <img src="images/project-1.png" alt="">
-                <h2>Project 1</h2>
-                <div class="header-action-area">
-                    <a href="" class="btn">Github</a>
-                    <a href="" class="btn btn-dark">Live Demo</a>
-                </div>
-            </div>
-            <!-- second project -->
-            <div class="project">
-                <img src="images/project-2.png" alt="">
-                <h2>Project 2</h2>
-                <div class="header-action-area">
-                    <a href="" class="btn">Github</a>
-                    <a href="" class="btn btn-dark">Live Demo</a>
-                </div>
-            </div>
-            <!-- third project -->
-            <div class="project">
-                <img src="images/project-3.png" alt="">
-                <h2>Project 3</h2>
-                <div class="header-action-area">
-                    <a href="" class="btn">Github</a>
-                    <a href="" class="btn btn-dark">Live Demo</a>
-                </div>
+        <div class="container skill-container">
+            <div class="skill">
+                <img src="images/data_center.jpg" alt="">
+                <img src="images/data_center.jpg" alt="">
+                <img src="images/data_center.jpg" alt="">
             </div>
         </div>
     </section>
 
     <!-- Contact Section code starts here -->
-    <section>
+    <section id="contact-section">
         <p class="global-title-p">
             Get In Touch
         </p>

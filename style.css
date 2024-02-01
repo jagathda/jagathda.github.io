@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Poppins';
-    src: url(fonts/Poppins/Poppins-Regular.ttf);
+    font-family: 'Titillium';
+    src: url(fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
 }
 
 *{
@@ -9,10 +9,11 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Poppins';
+    font-family: 'Titillium';
     border: none;
     outline: none;
     letter-spacing: 1px;
+    background-color: #CCD9E2;
 }
 
 .container{
@@ -25,6 +26,7 @@
     text-align: center;
     font-size: 17px;
     margin-top: 70px;
+    background-color: rgb(224, 168, 94);
 }
 
 .global-title-h1{
@@ -32,9 +34,10 @@
     margin-bottom: 40px;
     font-size: 35px;
     margin-top: 10px;
+    background-color: #D67940;;
 }
 
-/* navbar styling starts here */
+/* navbar styling goes here */
 nav{
     height: 80px;
     background-color: #3D155E;
@@ -51,13 +54,15 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #3D155E;
 }
 
-.logo{
-    font-size: 20px;
+.name{
+    font-size: 25px;
     color: white;
     font-weight: 600;
     letter-spacing: 2px;
+    background-color: #3D155E;
 }
 
 .nav-links{
@@ -66,27 +71,26 @@ nav{
     align-items: center;
     gap: 20px;
     width: 30%;
-
+    background-color: #3D155E;
 }
 
 .nav-links li a{
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
+    background-color: #3D155E;
 }
 
 .nav-links li a:hover{
-    color: #DF678C ;
-    /* text-decoration: underline; */
+    color: #6F4849 ;
 }
 
 .nav-links li a:active{
     color: red;
 }
 
-/* Header styling starts here */
-
+/* Header styling goes here */
 header{
     padding-top: 150px;
 }
@@ -94,9 +98,7 @@ header{
 .header-image{
     height: 100%;
     width: 90%;
-    /* border: 1px solid black; */
 }
-
 
 .header-container{
     display: grid;
@@ -117,10 +119,8 @@ header{
     justify-content: center;
 }
 
-/* Research a bit more on different between px and em */
-
 .btn{
-    border: 1px solid #DF678C;
+    border: 1px solid #070707;
     width: 180px;
     padding: 1em 2em ;
     border-radius: 30px;
@@ -130,7 +130,7 @@ header{
 }
 
 .btn-dark{
-    background-color: #DF678C;
+    background-color: #6F4849;
     color: white;
 }
 
@@ -165,7 +165,6 @@ header{
 
 
 /* About Section styling starts here */
-
 .about-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -176,12 +175,11 @@ header{
 
 .about-container img{
     width: 100%;
-    /* display: block; */
+    display: block;
 }
 
 .basic-edu{
     display: flex;
-    /* you can use grid as well */
     justify-content: space-between;
     gap: 30px;
 }
@@ -205,14 +203,11 @@ header{
     line-height: 20px;
 }
 
-
-
 section{
     position: relative;
 }
 
-/* Expereience styling starts here */
-
+/* Expereience styling goes here */
 .experience-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -250,34 +245,32 @@ section{
     margin: auto;
 }
 
-/* Project styling starts here */
+.experience-image img{
+    width: 80%;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
 
-.project-container{
+/* Skill styling starts here */
+.skill-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
 }
 
-.project{
+.skill{
     border: 1px solid black;
     border-radius: 30px;
     padding: 25px;
     text-align: center;
-}
-.project img{
-    width: 100%;
-    border-radius: 30px;
-    margin-bottom: 20px;
-}
+} 
 
 .central-project{
     display: flex;
     justify-content: center;
- 
 }
 
-/* Contact styling starts here */
-
+/* Contact styling goes here */
 .contact-container{
     border: 1px solid black;
     border-radius: 25px;
@@ -298,8 +291,7 @@ section{
     font-weight: 600;
 }
 
-/* footer styling starts here */
-
+/* footer styling goes here */
 footer{
     margin-top: 50px;
     text-align: center;
