@@ -3,17 +3,23 @@
     src: url(fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Barlow';
+    src: url(fonts/Barlow/Barlow-Medium.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Titillium';
+    font-family: 'Barlow';
     border: none;
     outline: none;
     letter-spacing: 1px;
-    background-color: #CCD9E2;
+    /* background-color: #CCD9E2; */
+    background-color: #ddd4c3;
 }
 
 .container{
@@ -26,7 +32,8 @@
     text-align: center;
     font-size: 17px;
     margin-top: 70px;
-    background-color: rgb(224, 168, 94);
+    background-color: hwb(73 53% 23%);
+    /* background-color: rgb(224, 168, 94); */
 }
 
 .global-title-h1{
@@ -34,13 +41,14 @@
     margin-bottom: 40px;
     font-size: 35px;
     margin-top: 10px;
-    background-color: #D67940;;
+    background-color: hsl(73, 44%, 28%);
+    /* background-color: #D67940;; */
 }
 
 /* navbar styling goes here */
 nav{
     height: 80px;
-    background-color: #3D155E;
+    background-color: #d3cd9a;
     position: fixed;
     top: 0;
     left: 0;
@@ -54,15 +62,16 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3D155E;
+    background-color: #d3cd9a;
 }
 
 .name{
-    font-size: 25px;
-    color: white;
+    font-size: 35px;
+    color: black;
     font-weight: 600;
     letter-spacing: 2px;
-    background-color: #3D155E;
+    background-color: #d3cd9a;
+    padding-left: 65px;
 }
 
 .nav-links{
@@ -71,15 +80,16 @@ nav{
     align-items: center;
     gap: 20px;
     width: 30%;
-    background-color: #3D155E;
+    background-color: #d3cd9a;
+    margin-right: 50px;
 }
 
 .nav-links li a{
-    color: white;
+    color: black;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
-    background-color: #3D155E;
+    background-color: #d3cd9a;
 }
 
 .nav-links li a:hover{
@@ -129,8 +139,13 @@ header{
     font-weight: 600; 
 }
 
+.btn-light{
+    background-color: hwb(73 53% 23%);
+    color: white;
+}
+
 .btn-dark{
-    background-color: #6F4849;
+    background-color: hsl(73, 44%, 28%);
     color: white;
 }
 
@@ -167,7 +182,7 @@ header{
 /* About Section styling starts here */
 .about-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 35px;
     justify-content: space-between;
     align-items: center;
@@ -190,10 +205,11 @@ header{
     padding: 30px;
     text-align: center;
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
 }
 
 .edu-box img{
+    width: 300px;
     margin: auto;
 }
 
@@ -217,13 +233,14 @@ section{
 .expereience-box{
     border: 1px solid black;
     border-radius: 30px;
-    padding: 25px
+    padding: 30px 50px 40px 50px;
 }
 
 .expereience-box h2{
     font-size: 30px;
     font-weight: 600;
-    margin-top: 20px;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -234,41 +251,57 @@ section{
     margin-top: 30px;
 }
 
-.ex-div{
+/* .ex-div{
     display: flex;
     gap: 20px;
     margin: auto;
-}
+} */
 
-.ex-div img{
+/* .ex-div img{
     width: 32px;
     margin: auto;
+} */
+
+.experience-image {
+    display: flex;
 }
 
 .experience-image img{
-    width: 80%;
+    width: 100%;
+    height: 200px;
     border-radius: 30px;
     margin-bottom: 10px;
+    margin: auto;
+    padding-top: 10px;
 }
 
 /* Skill styling starts here */
 .skill-container{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
 }
 
 .skill{
+    display: flex;
     border: 1px solid black;
     border-radius: 30px;
     padding: 25px;
     text-align: center;
+    vertical-align: middle;
 } 
 
-.central-project{
+.skill img{
+    width: 100%;
+    /* border-radius: 30px; */
+    /* margin-bottom: 20px; */
+    margin: auto;
+}
+
+/* .central-project{
     display: flex;
     justify-content: center;
-}
+} */
 
 /* Contact styling goes here */
 .contact-container{
