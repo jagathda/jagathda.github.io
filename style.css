@@ -251,17 +251,6 @@ section{
     margin-top: 30px;
 }
 
-/* .ex-div{
-    display: flex;
-    gap: 20px;
-    margin: auto;
-} */
-
-/* .ex-div img{
-    width: 32px;
-    margin: auto;
-} */
-
 .experience-image {
     display: flex;
 }
@@ -298,10 +287,12 @@ section{
     margin: auto;
 }
 
-/* .central-project{
-    display: flex;
-    justify-content: center;
-} */
+/* newly added */
+.experience-image img{
+    width: 80%;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
 
 /* Contact styling goes here */
 .contact-container{
